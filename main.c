@@ -34,7 +34,7 @@ SPI_HandleTypeDef hspi1;
 TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN PV */
-char *mynameinmors[]={"-.-.",".","..","-.-",".-..","--"};
+char *mynameinmors[]={"0101","1","00","010","1011","00"};
 char *nameletters[]={"C\n","E\n","I\n","K\n","L\n","M\n"};
 int i=0;
 char cleaner[6];
