@@ -386,7 +386,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 1);
 		}
 		else{
-			time=(TIM6->CNT); 
+			time=(TIM6->CNT);
 			HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 0);
 			(TIM6->CNT)=0;
 
@@ -399,15 +399,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			i++;
 				  }
 		if(i==4 || osman){
-			mece(); 
+			mece();
 	  		i=0;
 		}
 		}
 	}
-	if(GPIO_Pin==BATMAN2_Pin){ 
+	if(GPIO_Pin==BATMAN2_Pin){
 		osman=1;
 		if(i==4 || osman){
-			mece(); 
+			mece();
 			i=0;
 	 }
 	}
